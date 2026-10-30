@@ -1,0 +1,407 @@
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8ee;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background-color: #f8f8ee;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: greenyellow;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #8ac900;
+}
+
+
+/* HEADER ICONS */
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header-icons a {
+    color: #111;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: greenyellow;
+    transform: translateY(-3px);
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: greenyellow;
+    color: #111;
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+
+
+/* ABOUT HEADING */
+
+.about-heading {
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.about-heading p:first-child {
+    color: #8ac900;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.about-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.heading-text {
+    max-width: 500px;
+    margin: auto;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* OUR STORY */
+
+.our-story {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 50px 7%;
+}
+
+.story-image {
+    width: 50%;
+    height: 520px;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* IMAGE LABEL */
+
+.image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: burlywood;
+    color: #111;
+    padding: 12px 22px;
+}
+
+.image-label p {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.image-label h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
+}
+
+
+.story-text {
+    width: 50%;
+}
+
+.small-title {
+    color: #8ac900;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.story-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.story-text > p:not(.small-title) {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.story-features {
+    display: flex;
+    gap: 40px;
+    margin-top: 35px;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.story-features small {
+    color: #8ac900;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.story-features h4 {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 80px 7%;
+}
+
+.stat-card {
+    border-top: 2px solid greenyellow;
+    padding-top: 25px;
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-7px);
+}
+
+.stat-card small {
+    color: #8ac900;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.stat-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 20px 0 10px;
+}
+
+.stat-card h5 {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.stat-card p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* EXPLORE SECTION */
+
+.explore {
+    background-color: #eeeee0;
+    margin: 40px 5%;
+    padding: 55px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore small {
+    color: #8ac900;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.explore h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.explore a {
+    text-decoration: none;
+    color: #111;
+    background-color: greenyellow;
+    padding: 17px 25px;
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+
+.explore a:hover {
+    background-color: #111;
+    color: greenyellow;
+}
+
+.explore a i {
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+.explore a:hover i {
+    transform: translateX(5px);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 60px 7% 20px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-brand h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.footer-brand span {
+    color: greenyellow;
+}
+
+.footer-brand p,
+.newsletter p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links h4,
+.newsletter h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: greenyellow;
+    padding-left: 5px;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsletter input {
+    padding: 13px;
+    border: 1px solid #555;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.newsletter input:focus {
+    border-color: greenyellow;
+}
+
+.newsletter button {
+    padding: 13px;
+    border: none;
+    background-color: greenyellow;
+    color: #111;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
